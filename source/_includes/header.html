@@ -50,6 +50,9 @@
     {% if site.instagram_user %}
     <a class="instagram" href="http://instagram.com/{{ site.instagram_user }}" title="Instagram">Instagram</a>
 		{% endif %}
+		{% if site.feedly_add_url %}
+		<a class="feedly" title="Feedly" href="{{ site.feedly_add_url }}" target="blank">Feedly</a>
+		{% endif %}
 	</div>
 	<form class="search" action="{{ site.simple_search }}" method="get">
 		<input class="alignright" type="text" name="q" results="0">
